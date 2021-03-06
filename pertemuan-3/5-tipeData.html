@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>#JS5: Mengenal Tipe Data</title>
+</head>
+
+<body>
+ <h1>Belajar Javascript Part 5: Mengenal Tipe Data pada Javascript</h1>
+ <h2>Mata Kuliah Pemrograman Berbasis Web Kelas C</h2>
+ 
+ <h3>Tipe Data Number pada Javascript</h3>
+ <div id="hasil1"></div> <!-- id hasil1 -->
+
+ <h3>Tipe Data String pada Javascript</h3>
+ <div id="hasil2"></div> <!-- id hasil2 -->
+
+ <h3>Tipe Data Array pada Javascript</h3>
+ <div id="hasil3"></div> <!-- id hasil3 -->
+
+ <h3>Tipe Data Object pada Javascript</h3>
+ <div id="hasil4"></div> <!-- id hasil4 -->
+
+ <script type="text/javascript">
+ 	var angka = 80;
+ 	var kalimat = "Belajar javascript dasar di MK Pemrograman Berbasis Web";
+ 	var hewan = ["Kambing", "Bebek", "Ayam"];
+ 	var manusia = {
+ 		nama : "Siti Balqis Humaira",
+ 		alamat : "Aceh Besar",
+ 		umur : 19,
+ 		pekerjaan  : "mahasiswa"
+ 	};
+
+ 	document.getElementById("hasil1").innerHTML = angka;
+ 	document.getElementById("hasil2").innerHTML = kalimat;
+ 	document.getElementById("hasil3").innerHTML = "hewan pada indeks ke-2 dalam array adalah "+hewan[2];
+ 	document.getElementById("hasil4").innerHTML = manusia.nama+" tinggal di "+manusia.alamat+". Ia sekarang berumur "+manusia.umur+" tahun dan bekerja sebagai "+manusia.pekerjaan;
+ </script>
+
+</body>
+
+</html>

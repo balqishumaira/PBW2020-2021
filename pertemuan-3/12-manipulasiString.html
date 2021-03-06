@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>#JS12: Manipulasi String pada Javascript</title>
+</head>
+
+<body>
+ <h3>Judul1 : <br>Manipulasi String pada Javascript<br>Judul2 : <br>di Mata Kuliah PBW</h3>
+ 
+ <h4>menghitung jumlah karakter dari judul1 dengan length</h4>
+ <p id="contoh1"></p> <!-- id contoh1 -->
+
+ <h4>menemukan letak string Javascript dari judul1 dengan indexOf()</h4>
+ <p id="contoh2"></p> <!-- id contoh2 -->
+
+ <h4>mencari string Javascript dari judul1 dengan search()</h4>
+ <p id="contoh3"></p> <!-- id contoh3 -->
+
+ <h4>memfilter string Javascript dari judul1 dengan slice()</h4>
+ <p id="contoh4"></p> <!-- id contoh4 -->
+
+ <h4>mengganti string Javascript dari judul1 dengan replace()</h4>
+ <p id="contoh5"></p> <!-- id contoh5 -->
+
+ <h4>mengubah judul1 menjadi huruf kapital semua dengan toUpperCase()</h4>
+ <p id="contoh6"></p> <!-- id contoh6 -->
+
+ <h4>mengubah judul1 menjadi huruf non-kapital semua dengan toLowerCase()</h4>
+ <p id="contoh7"></p> <!-- id contoh7 -->
+
+ <h4>menggabungkan judul1 dan judul2 dengan concat()</h4>
+ <p id="contoh8"></p> <!-- id contoh8 -->
+
+ <h4>convert string judul1 ke array dengan split()</h4>
+ <p id="contoh9"></p> <!-- id contoh9 -->
+ 
+ <script type="text/javascript">
+ 	var judul = "Manipulasi String pada Javascript";
+ 	var judul2 = "di Mata Kuliah PBW";
+ 	var convert = judul.split(" ");
+
+ 	document.getElementById("contoh1").innerHTML = judul.length;
+ 	document.getElementById("contoh2").innerHTML = judul.indexOf("Javascript");
+ 	document.getElementById("contoh3").innerHTML = judul.search("Javascript");
+ 	document.getElementById("contoh4").innerHTML = judul.slice(23,33);
+ 	document.getElementById("contoh5").innerHTML = judul.replace("Javascript","Python");
+ 	document.getElementById("contoh6").innerHTML = judul.toUpperCase();
+ 	document.getElementById("contoh7").innerHTML = judul.toLowerCase();
+ 	document.getElementById("contoh8").innerHTML = judul.concat(" ",judul2);
+ 	document.getElementById("contoh9").innerHTML = convert[0];
+
+ </script>
+
+</body>
+
+</html>

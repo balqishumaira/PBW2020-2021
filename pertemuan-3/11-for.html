@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>#JS11: Perulangan For</title>
+</head>
+
+<body>
+ <h1>Perulangan For pada Javascript</h1>
+ <h2>Mata Kuliah Pemrograman Berbasis Web Kelas C</h2>
+ 
+ <button onclick="perulangan()">Klik di sini</button> 
+ 
+ <div id="hasil"></div> <!-- id hasil -->
+
+ <script type="text/javascript">
+
+ 	function perulangan() {
+ 		var text = "";
+ 		var x;
+
+ 		for(x = 0; x <= 10; x++) {
+ 			text += "angka" + x + "<br>";
+ 		}
+
+ 	document.getElementById("hasil").innerHTML = text;
+
+ 	}
+
+ </script>
+
+</body>
+
+</html>
